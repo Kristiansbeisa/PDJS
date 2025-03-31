@@ -1,7 +1,7 @@
 function uzd1() {
-    let n1 = document.getElementById("in1").value;
+    let n = document.getElementById("in1").value;
     let izv1 = "";
-    for (i=2; i<=n1; i++) {
+    for (i=2; i<=n; i++) {
         if (i==2) {
             izv1+=" "+i 
         }
@@ -40,13 +40,13 @@ function uzd2() {
 
 function uzd3() {
     let count = 0;
-    let s = document.getElementById("in3").value;
-    let c = document.getElementById("in31").value;
-    while (s > 0) {
-        if (s % 10 == c) {
+    let m = document.getElementById("in3").value;
+    let n = document.getElementById("in31").value;
+    while (m > 0) {
+        if (m % 10 == n) {
             count++;
         }
-        s = Math.floor(s / 10);
+        m = Math.floor(m / 10);
     }
     document.getElementById("izv3").innerHTML ="Cipara biežums skaitlī: " + count;
 }
